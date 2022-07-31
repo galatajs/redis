@@ -1,4 +1,4 @@
 export enum RedisEnum {
-  CLIENT_OPTIONS = "REDIS_CLIENT_OPTIONS",
+  CLIENT_OPTIONS = "redisClientOptions",
   DEFAULT_NAME = "redis",
 }

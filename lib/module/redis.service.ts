@@ -1,19 +1,31 @@
-import { OnAppStarted, OnModuleInstalled } from "@istanbul/app";
+import {
+  OnAppFinished,
+  OnAppStarted,
+  OnModuleInstalled,
+  warn,
+} from "@istanbul/app";
 import { RedisClientType, createClient, RedisClientOptions } from "redis";
 import { RedisEnum } from "./redis.enum";
 
-export class RedisService implements OnAppStarted, OnModuleInstalled {
+export class RedisService implements OnAppFinished, OnModuleInstalled {
   client!: RedisClientType<any, any, any>;
-  private options!: RedisClientOptions;
+  connected: boolean = false;
 
-  onModuleInstalled(params: {
+  onModuleInstalled = async (params: {
     [RedisEnum.CLIENT_OPTIONS]: RedisClientOptions;
-  }) {
-    this.options = params[RedisEnum.CLIENT_OPTIONS];
-  }
-
-  async onAppStarted(): Promise<void> {
-    this.client = createClient(this.options);
+  }): Promise<void> => {
+    debugger;
+    this.client = createClient(params[RedisEnum.CLIENT_OPTIONS]);
+    this.client.on("error", (err) => {
+      throw new Error(err);
+    });
+    this.client.on("connect", () => {
+      this.connected = true;
+    });
     await this.client.connect();
-  }
+  };
+
+  onAppFinished = (): void => {
+    this.client.quit();
+  };
 }
