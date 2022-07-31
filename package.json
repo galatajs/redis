@@ -1,0 +1,45 @@
+{
+  "name": "@istanbul/redis",
+  "version": "0.0.1",
+  "description": "Redis package of istanbul framework",
+  "homepage": "https://github.com/istanbulnode/redis#readme",
+  "keywords": [
+    "typescript",
+    "istanbul",
+    "istanbuljs",
+    "redis",
+    "driver"
+  ],
+  "author": "Sami Salih İBRAHİMBAŞ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istanbulnode/redis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/istanbulnode/redis/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "node --no-warnings --test",
+    "clear": "del-cli ./dist/*",
+    "build": "npm run clear && tsc",
+    "production": "npm run build && npm run test"
+  },
+  "dependencies": {
+    "@istanbul/app": "^0.0.17",
+    "redis": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  }
+}
