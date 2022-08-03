@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@istanbul/app@^0.0.24":
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/@istanbul/app/-/app-0.0.24.tgz#6d92ede15b809b8ebdd4b15ea9cd7dadb446a6da"
-  integrity sha512-F/z8FQtUnX0nfrkIAIqltFYBvDIAUi6pSIcB1yA/ZqjEXBiNExb+DmZ2Si7ZzYSejMO4wP6iZllP3ef74mhJtw==
+"@istanbul/app@^0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@istanbul/app/-/app-0.0.27.tgz#fa0d43add257ca269f4876f6da0ec6b9f374edc1"
+  integrity sha512-6YI0vGS4erF/IHej+1YZYRF3bPBsqeCkhQJw0WitOeLLtowMVVnVNuT+h0cC4skO5lDzJekj54UPft+U4C4l1Q==
   dependencies:
     "@istanbul/core" "^0.0.7"
     "@istanbul/events" "^0.0.4"

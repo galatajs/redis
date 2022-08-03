@@ -1,9 +1,4 @@
-import {
-  OnAppFinished,
-  OnAppStarted,
-  OnModuleInstalled,
-  warn,
-} from "@istanbul/app";
+import { OnAppFinished, OnModuleInstalled } from "@istanbul/app";
 import { RedisClientType, createClient, RedisClientOptions } from "redis";
 import { RedisEnum } from "./redis.enum";
 
