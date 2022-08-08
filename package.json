@@ -1,6 +1,6 @@
 {
   "name": "@istanbul/redis",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Redis package of istanbul framework",
   "homepage": "https://github.com/istanbulnode/redis#readme",
   "keywords": [
