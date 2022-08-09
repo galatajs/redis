@@ -1,6 +1,6 @@
 {
   "name": "@istanbul/redis",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Redis package of istanbul framework",
   "homepage": "https://github.com/istanbulnode/redis#readme",
   "keywords": [
@@ -35,7 +35,7 @@
     "production": "npm run build && npm run test"
   },
   "dependencies": {
-    "@istanbul/app": "^0.0.27",
+    "@istanbul/app": "^0.0.29",
     "redis": "^4.2.0"
   },
   "devDependencies": {
