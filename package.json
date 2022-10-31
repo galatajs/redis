@@ -1,12 +1,10 @@
 {
-  "name": "@istanbul/redis",
-  "version": "0.0.5",
-  "description": "Redis package of istanbul framework",
-  "homepage": "https://github.com/istanbulnode/redis#readme",
+  "name": "@galatajs/redis",
+  "version": "0.1.1",
+  "description": "Redis package of galatajs framework",
+  "homepage": "https://github.com/galatajs/redis#readme",
   "keywords": [
     "typescript",
-    "istanbul",
-    "istanbuljs",
     "redis",
     "driver"
   ],
@@ -14,10 +12,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/istanbulnode/redis.git"
+    "url": "git+https://github.com/galatajs/redis.git"
   },
   "bugs": {
-    "url": "https://github.com/istanbulnode/redis/issues"
+    "url": "https://github.com/galatajs/redis/issues"
   },
   "directories": {
     "lib": "lib",
@@ -35,7 +33,7 @@
     "production": "npm run build && npm run test"
   },
   "dependencies": {
-    "@istanbul/app": "^0.0.29",
+    "@galatajs/app": "^0.1.1",
     "redis": "^4.2.0"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { createModule, Module } from "@istanbul/app";
+import { createModule, Module } from "@galatajs/app";
 import { RedisClientOptions } from "redis";
 import { RedisModuleCreator, RedisModuleOptions } from "../types/redis.types";
 import { RedisEnum } from "./redis.enum";

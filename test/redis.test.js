@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert");
-const { createApp, createModule } = require("@istanbul/app");
+const { createApp, createModule } = require("@galatajs/app");
 const { createRedisModule } = require("../dist");
 
 test("Redis Module Testing", async (t) => {

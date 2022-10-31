@@ -1,4 +1,4 @@
-import { OnAppFinished, OnModuleInstalled } from "@istanbul/app";
+import { OnAppFinished, OnModuleInstalled } from "@galatajs/app";
 import { RedisClientType, createClient, RedisClientOptions } from "redis";
 import { RedisEnum } from "./redis.enum";
 
@@ -9,7 +9,6 @@ export class RedisService implements OnAppFinished, OnModuleInstalled {
   onModuleInstalled = async (params: {
     [RedisEnum.CLIENT_OPTIONS]: RedisClientOptions;
   }): Promise<void> => {
-    debugger;
     this.client = createClient(params[RedisEnum.CLIENT_OPTIONS]);
     this.client.on("error", (err) => {
       throw new Error(err);

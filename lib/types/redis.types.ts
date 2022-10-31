@@ -1,4 +1,4 @@
-import { Module } from "@istanbul/app";
+import { Module } from "@galatajs/app";
 import { RedisClientOptions } from "redis";
 export interface RedisModuleOptions {
   global?: boolean;
